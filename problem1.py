@@ -11,19 +11,14 @@ for i in range(n):
         el = ord(el)
     arr.append(el)
     
-# print(arr)
 
 
 def findGCD(a, b):
     if a > b:
         a, b = b, a
-    while a >= 0:
-        print('before a,b',a,b)
+    while a >= 0.001:
         a, b = b % a, a
-        print('after a, b', a, b)
-    return b
-
-print('hello', findGCD(6, 15))
+    return round(b, 3)
 
 def calculateArrayGCD(arr):
     gcd = arr[0]
@@ -41,7 +36,7 @@ def bubbleSort(arr):
 
 if __name__ == '__main__':
     gcd = calculateArrayGCD(arr)
-    print(gcd)
+    print('GCD:', gcd)
     arr.append(gcd)
     sortedArr = bubbleSort(arr)
     print(sortedArr)

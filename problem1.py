@@ -10,8 +10,6 @@ for i in range(n):
     except:
         el = ord(el)
     arr.append(el)
-    
-
 
 def findGCD(a, b):
     if a > b:

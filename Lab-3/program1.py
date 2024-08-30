@@ -2,8 +2,9 @@
 import pandas as pd
 
 df = pd.read_csv('data/student.csv')
+
 print(df)
 
 print(df.describe())
 
-print(df['Name'].value_counts())
+print(df['Gender'].value_counts())

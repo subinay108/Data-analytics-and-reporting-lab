@@ -13,3 +13,9 @@
 
 ## Lab-3
 1. Read csv file using pandas
+
+## Lab-4
+1. Read a CSV file and display the first 5 rows ofthe dataset
+2. Specify which column should be used as the index when reading a CSV file
+3. Read only specific columns from a CSV file
+4. Skip a specific number of rows when reading a CSV file

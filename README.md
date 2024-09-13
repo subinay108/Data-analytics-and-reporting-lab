@@ -19,3 +19,9 @@
 2. Specify which column should be used as the index when reading a CSV file
 3. Read only specific columns from a CSV file
 4. Skip a specific number of rows when reading a CSV file
+
+## Lab-5
+1. WAPP to draw line diagram (Line Graph)
+2. WAPP to draw multi line diagram (Line Graph)
+3. WAPP to draw an area diagram(Area Plot)
+4. WAPP to draw a multiple area diagram (Area Plot)

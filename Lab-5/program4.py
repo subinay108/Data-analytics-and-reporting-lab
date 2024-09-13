@@ -7,8 +7,8 @@ Y1 = [random.randint(1, 10) for i in X]
 Y2 = [random.randint(1, 10) for i in X]
 
 
-plt.fill_between(X, Y1, label='y = x ^ 2', alpha=0.5, color='skyblue')
-plt.fill_between(X, Y2, label='y = x ^ 3', alpha=0.5, color='olive')
+plt.fill_between(X, Y1, label='Area 1', alpha=0.5, color='skyblue')
+plt.fill_between(X, Y2, label='Area 2', alpha=0.5, color='olive')
 plt.xlabel('X-axis')
 plt.ylabel('Y-axis')
 plt.title('Multi Line Diagram')

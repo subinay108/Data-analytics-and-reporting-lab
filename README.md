@@ -25,3 +25,11 @@
 2. WAPP to draw multi line diagram (Line Graph)
 3. WAPP to draw an area diagram(Area Plot)
 4. WAPP to draw a multiple area diagram (Area Plot)
+
+## Lab-6
+1. WAPP to implement a Horizontal Bar Graph
+2. WAPP to implement a Vertical Bar Graph
+3. WAPP to implement a Double Bar Graph
+4. WAPP to implement a Multiple Bar Graph
+5. WAPP to implement a Stack Bar Graph
+6. WAPP to implement a Line Bar Graph 

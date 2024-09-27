@@ -8,14 +8,14 @@
 ## Lab-2
 1. WAPP to requests making get request
 2. WAPP to parsing the HTML using beautifulsoup
-3. WAPP to web scraping programto extract titles from a web page
+3. WAPP to web scraping program to extract titles from a web page
 4. WAPP to find elements by class from a webpage
 
 ## Lab-3
 1. Read csv file using pandas
 
 ## Lab-4
-1. Read a CSV file and display the first 5 rows ofthe dataset
+1. Read a CSV file and display the first 5 rows of the dataset
 2. Specify which column should be used as the index when reading a CSV file
 3. Read only specific columns from a CSV file
 4. Skip a specific number of rows when reading a CSV file
@@ -33,3 +33,6 @@
 4. WAPP to implement a Multiple Bar Graph
 5. WAPP to implement a Stack Bar Graph
 6. WAPP to implement a Line Bar Graph 
+
+## Lab-7
+1. Implement a Pie-chart using python

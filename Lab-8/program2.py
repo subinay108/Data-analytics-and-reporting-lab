@@ -1,10 +1,13 @@
 # WAPP to implement a Scatter Plot
 
 import matplotlib.pyplot as plt
-import numpy as np
+import pandas as pd
 
-x = np.array([5,7,8,7,2,17,2,9,4,11,12,9,6])
-y = np.array([99,86,87,88,111,86,103,87,94,78,77,85,86])
+df = pd.read_csv('./datasets/gender_height_weight.csv')
+height = df['Height']
+weight = df['Weight']
 
-plt.scatter(x, y)
+plt.scatter(height, weight)
+plt.xlabel('Height')
+plt.ylabel('Weight')
 plt.show()

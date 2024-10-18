@@ -36,3 +36,8 @@
 
 ## Lab-7
 1. Implement a Pie-chart using python
+
+## Lab-8
+1. WAPP to implement a Bar Chart
+2. WAPP to implement a Scatter Plot
+3. WAPP to implement a Line Chart

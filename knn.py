@@ -20,8 +20,8 @@ def euclidean_distance(X, Y):
 
 def knn_classifier(dataset, inputData, k):
     distances = {}
-    for sample in dataset:
-        distances[euclidean_distance(sample[:-1], inputData)] = sample[-1]
+    for index, sample in dataset.iterrows():
+        distances[euclidean_distance([sample['Height'], sample['Weight']], inputData)] = sample['Gender']
     
     count = 0
     labelsCount = {}
@@ -51,14 +51,11 @@ if __name__ == '__main__':
     #     [45,	20,	'Dog'],
     #     [50,	25,	'Dog']
     # ]
-    df = pd.read_csv('Lab-8\datasets\gender_height_weight.csv')
+    df = pd.read_csv('Lab-8/datasets/gender_height_weight.csv')
     cols = df.columns.tolist()
     cols = cols[1:] + [cols[0]]
     df = df[cols]
     
-    inputData = [40, 10]
-    
-    print(list(df))
-    
+    inputData = [170, 79]
     predicted_class = knn_classifier(df, inputData, 4)
     print('The predicted class of the given input :', predicted_class)

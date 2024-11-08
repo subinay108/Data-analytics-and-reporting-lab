@@ -6,6 +6,8 @@
 # - Find what is the most common label of those k-neighbors
 # - Most common label is the output of the classifer
 
+import pandas as pd
+
 def euclidean_distance(X, Y):
     if len(X) != len(Y):
         raise ValueError('X and Y are of different sizes')
@@ -42,14 +44,21 @@ def knn_classifier(dataset, inputData, k):
     return output
 
 if __name__ == '__main__':
-    dataset = [
-        [30,    5,  'Cat'],
-        [25,	4,	'Cat'],
-        [35,	6,	'Cat'],
-        [45,	20,	'Dog'],
-        [50,	25,	'Dog']
-    ]
+    # dataset = [
+    #     [30,    5,  'Cat'],
+    #     [25,	4,	'Cat'],
+    #     [35,	6,	'Cat'],
+    #     [45,	20,	'Dog'],
+    #     [50,	25,	'Dog']
+    # ]
+    df = pd.read_csv('Lab-8\datasets\gender_height_weight.csv')
+    cols = df.columns.tolist()
+    cols = cols[1:] + [cols[0]]
+    df = df[cols]
+    
     inputData = [40, 10]
     
-    predicted_class = knn_classifier(dataset, inputData, 4)
+    print(list(df))
+    
+    predicted_class = knn_classifier(df, inputData, 4)
     print('The predicted class of the given input :', predicted_class)

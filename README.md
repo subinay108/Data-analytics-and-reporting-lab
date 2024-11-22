@@ -41,3 +41,9 @@
 1. WAPP to implement a Bar Chart
 2. WAPP to implement a Scatter Plot
 3. WAPP to implement a Line Chart
+
+## Lab-9
+1. Write a python program to demonstrate various type of data cleaning operation using data exploration and imputation
+
+## Lab-10
+1. Write a python code to visualize Time Series Data using Seaborn

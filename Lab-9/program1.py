@@ -10,7 +10,6 @@ data = {
     'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva', 'Frank', 'Grace', 'Hannah', 'Ian', 'Jack'],
     'Age': [25, np.nan, 30, 29, 35, 32, np.nan, 28, 50, 29],
     'Salary': [50000, 60000, np.nan, 52000, 58000, np.nan, 70000, 71000, 75000, 80000],
-    'Department': ['HR', 'IT', 'Finance', 'IT', 'HR', 'Finance', 'IT', 'HR', 'Finance', 'IT'],
     'City': ['New York','Los Angeles', 'Chicago', np.nan, 'Houston', np.nan, 'Houston', 'Chicago', 'New York', np.nan],
 }
 
@@ -46,8 +45,8 @@ df['Salary'].fillna(median_salary, inplace=True)
 # Impute missing values in 'City' column with mode
 df['City'].fillna(df['City'].mode()[0], inplace=True)
 
-print('\nWithout interpolation')
-print(df)
+# print('\nWithout interpolation')
+# print(df)
 
 # Impute missing values in 'Age' column with interpolation
 # df['Age'].interpolate(method='linear', limit_direction='forward',inplace=True)

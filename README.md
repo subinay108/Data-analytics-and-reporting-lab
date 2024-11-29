@@ -47,3 +47,6 @@
 
 ## Lab-10
 1. Write a python code to visualize Time Series Data using Seaborn
+
+# Lab-11
+1. Write a python code to generate a word cloud and find most important words and find frequency
